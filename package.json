@@ -1,0 +1,28 @@
+{
+  "name": "crazygames-proxy-worker",
+  "version": "1.0.0",
+  "description": "A Cloudflare Workers proxy for CrazyGames - handles mixed content, bot detection, and secure outbound routing",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "wrangler dev",
+    "build": "npx tsc --noEmit",
+    "deploy": "wrangler deploy",
+    "lint": "eslint src/ --ext .ts"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "proxy",
+    "crazygames",
+    "security"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240614.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.45.0"
+  }
+}
